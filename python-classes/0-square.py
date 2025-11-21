@@ -2,7 +2,10 @@
 """This module defines a Square class with private size attribute and validation."""
 
 class Square:
+    """Represents a square with a private size attribute."""
+
     def __init__(self, size=0):
+        """Initialize a new Square with a given size (default 0)."""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
